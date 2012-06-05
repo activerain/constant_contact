@@ -21,7 +21,6 @@ module ConstantContact
           self.contact_lists.each do |list_id|
             rest_id = nil
             if list_id.instance_of? Fixnum
-
               rest_id = self.list_url(list_id)
             else
               rest_id = list_id.id
